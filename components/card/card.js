@@ -44,7 +44,7 @@ const cardCreation = () => {
             <div class="product-listing__card-content">
                 <p class="product-listing__card-description">${element.description}</p>
                 <p class="product-listing__card-price"><b>$ ${element.price}</b></p>
-                <img class="product-listing__fav-icon" alt="fav-icon" src="../assets/fav.png" />
+                <img class="product-listing__fav-icon" alt="fav-icon" src="../../assets/fav.png" />
             </div>
         </div>
         </div>
