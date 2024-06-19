@@ -1,0 +1,93 @@
+.product-listing__dropdown {
+    position: relative;
+    display: inline-block;
+    width: 95px;
+    @media (min-width: 992px) {
+        right: 0px;
+        width: 160px;
+    }
+}
+
+.product-listing__dropbtn {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    border: transparent ; 
+    @media (max-width: 991px) {
+        span {
+            border-bottom: 1px solid var(--nav-bg-color);
+        }
+    }
+    @media (min-width: 992px) {
+        justify-content: space-between;
+        border: 1px solid var(--nav-bg-color);
+        &::after {
+            content: '▾';
+            font-size: 16px;
+        } 
+    }
+}
+.product-listing__icon-mobile {
+    width: 15px;
+    height: 18px;
+    padding-right: 3px;
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+.product-listing__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-listing__dropdown-content a {
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.product-listing__dropdown-content a:hover {
+    background-color: var(--dropdown-hover-color);
+}
+
+.product-listing__dropdown:hover .product-listing__dropdown-content {
+    display: block;
+}
+.product-listing__top-sec,.product-listing__filter-top-sec {
+    
+    
+    @media (max-width: 991px) {
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.product-listing__top-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    @media (max-width: 991px) {
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        padding-bottom: 1px solid;
+    }
+}

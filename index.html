@@ -2,13 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-    <link rel="stylesheet" href="css/global.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="main/global.css" type="text/css" />
 </head>
 
 <body>
-  <p>Product Lisiting</p>
+  <header>
+    <div class="header container">
+      <div class="header__menu-icon">☰</div>
+      <div class="header__logo">VEINA</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header__cartIcon"><img class="header__cart-img" src="./assets/cart-img.png" alt="cart-icon" /> </div>
+    </div>
+  </header>
+  <div class="banner-content d-flex">
+    <div class="banner-content__left d-flex">
+      <h1 class="banner-content__title">Men's <br /> outerwear</h1>
+      <span class="border-blue-line"></span>
+    </div>
+    <img class="banner-content__img" src="./assets/banner-image.png" alt="banner" />
+  </div>
+  <div class="container">
+    <div class="product-listing d-lg-flex">
+      <div class="product-listing__left">
+        <p class="breadcrumb">Clothing / Women’s / Outerwear</p>
+        <div class="product-listing__filter-top-sec">
+          <div class="product-listing__filter-content"><img class="d-lg-none" src="../assets/filter-mobile-icon.png"
+              alt="filter-icon-mobile" /><span>Filter:</span>
+          </div>
+          <div class="product-listing__dropdown d-lg-none">
+            <button class="product-listing__dropbtn"><img class="product-listing__icon-mobile"
+                src="./assets/sort-icon.png" alt="sort-icon-mobile" /><span>Sort By</span></button>
+            <div class="product-listing__dropdown-content">
+              <a href="#" data-sort="low" class="sort-item">lowest price</a>
+              <a href="#" data-sort="high" class="sort-item">highest price</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-listing-filter">
+          <div class="product-listing__filter-sec">
+          </div>
+          <div class="product-listing__search">
+            <p><b>Search Here:</b></p>
+            <input type="text" placeholder="Search.." name="search">
+          </div>
+        </div>
+      </div>
+      <div class="product-listing-right">
+        <div class="product-listing__top-sec">
+          <p class="product-listing__count"><span>38</span> Results</p>
+          <div class="product-listing__dropdown d-none d-lg-block">
+            <button class="product-listing__dropbtn">Sort By: </button>
+            <div class="product-listing__dropdown-content">
+              <a href="#" data-sort="low" class="sort-item">lowest price</a>
+              <a href="#" data-sort="high" class="sort-item">highest price</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-listing__card-container">
+        </div>
+        <div class="product-listing__loader">
+          <button class="product-listing__load-more">Load More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer ">
+    <div class="container">
+      <div class="footer-section">
+        <div class="footer-section__text">
+          <p><b>Account</b></p>
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Order Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-section__text">
+          <p><b>About Us</b></p>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section__text">
+          <p><b>Help</b></p>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-section__text">
+          <p><b>Follow Us!</b></p>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="./main/global.js" type="module"></script>
 </body>
+
 </html>

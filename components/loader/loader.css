@@ -1,0 +1,11 @@
+.product-listing__loader {
+ display: flex;
+ justify-content: center;
+}
+.product-listing__load-more {
+    background-color: var(--banner-left-bg);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,58 @@
+/* import font */
+@font-face {
+    font-family: multi-base;
+    src: url("../fonts/Muli.ttf");
+  }
+  @font-face {
+    font-family: multi-bold;
+    src: url("../fonts/Muli-Bold.ttf");
+  }
+  @font-face {
+    font-family: multi-bold-italic;
+    src: url("../fonts/Muli-BoldItalic.ttf");
+  }
+  @font-face {
+    font-family: multi-italic;
+    src: url("../fonts/Muli-Italic.ttf");
+  }
+  @font-face {
+    font-family: multi-semi-bold;
+    src: url("../fonts/Muli-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: SourceSerifPro-Semibold;
+    src: url("../fonts/SourceSerifPro-Semibold.otf");
+  }
+  @font-face {
+    font-family: multi-light;
+    src: url("../fonts/Muli-Light.ttf");
+  }
+
+  /* variable for fonts */
+  :root {
+    --baseFont: multi-base;
+    --multiBold: multi-bold;
+    --multiBoldItalic: multi-bold-italic;
+    --multiItalic: multi-italic;
+    --multiSemiBold: multi-semi-bold;
+    --sourceSeriPro-semiBold: SourceSerifPro-Semibold;
+    --multiLight: multi-light;
+  }
+
+  /* variable for colors */
+  :root {
+    --background-color: #1363DF;
+    --white: #ffffff;
+    --nav-bg-color: #575757;
+    --footer-anchor-color: #545D63;
+    --black: #000;
+    --footer-border-color: #d6dbde;
+    --footer-text-color: #172026;
+    --banner-left-bg: #1B252C;
+    --dropdown-color: #f9f9f9;
+    --dropdown-hover-color:f1f1f1;
+    --card-bg: #f3f3f3;
+    --border-color: #D1D3D6;
+    --error: #ff0000;
+  }
+  
