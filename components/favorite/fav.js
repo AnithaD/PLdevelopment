@@ -5,11 +5,11 @@ const fav = () => {
         ele.addEventListener('click', function () {
             if (!ele.classList.contains('active')) {
                 ele.classList.add('active');
-                ele.setAttribute('src', '../assets/fav-active.png')
+                ele.setAttribute('src', './assets/fav-active.png')
             }
             else {
                 ele.classList.remove('active');
-                ele.setAttribute('src', '../assets/fav.png')
+                ele.setAttribute('src', './assets/fav.png')
             }
         })
     })
