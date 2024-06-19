@@ -1,6 +1,6 @@
 const search = () => {
     const searchInput = document.querySelector('.product-listing__search input');
-     const listItems = document.querySelectorAll('.card.active');
+     const listItems = document.querySelectorAll('.product-listing__card.active');
      let debounceTimeout;
     const debounceDelay = 300; // 300 milliseconds
     searchInput.addEventListener('keyup', () => {
