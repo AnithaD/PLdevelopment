@@ -41,9 +41,9 @@ body {
     @media (min-width: 1400px) {
         max-width: 1320px;
     }
-    @media (min-width: 1920px) {
+    /* @media (min-width: 1920px) {
         max-width: 1840px;
-    }
+    } */
 }
 .product-listing__fav-icon {
     cursor: pointer;
