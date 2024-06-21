@@ -15,6 +15,7 @@
     }
 }
 .banner-content {
+    padding-top: 65px;
     @media (max-width: 991px) {
         flex-direction: column;
     
@@ -43,7 +44,7 @@
 .banner-content__img {
     width: 100%;
     object-fit: cover;
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
         width: 65%;
         
     }

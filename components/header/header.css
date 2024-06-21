@@ -5,17 +5,19 @@ header {
     padding: 10px 20px;
     background-color: var(--background-color);
     color: var(--white);
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
 }
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-   
+    align-items: center; 
 }
 .header__logo {
     font-size: 25px;
     letter-spacing: 6px;
-    @media (max-width: 991px) {
+    @media (max-width: 1023px) {
         font-size: 20px;
     }  
    color: var(--white);

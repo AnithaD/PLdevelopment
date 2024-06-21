@@ -1,5 +1,6 @@
 import filter from "../filter/filter.js";
 import { loader } from "../loader/loader.js";
+import sort from "../sort/sort.js"
 //to create a card from API respose
 let uniqueCatagoryArray;
 const cardCreation = () => {
@@ -54,7 +55,7 @@ const cardCreation = () => {
         uniqueCatagoryArray = [...new Set(categoryArr)];
         filter();
         loader();
-       
+        sort();
     }
 }
 

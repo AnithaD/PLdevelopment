@@ -8,12 +8,18 @@ const search = () => {
         debounceTimeout = setTimeout(() => {
             const query = searchInput.value.toLowerCase();
             Array.from(listItems).forEach(item => {
-                const text = item.getAttribute('category').toLowerCase();
-                if (text.includes(query)) {
-                    item.classList.remove('d-none');
-                } else {
-                    item.classList.add('d-none');
+                if(searchInput != '') {
+                    const text = item.getAttribute('category').toLowerCase();
+                    if (text.includes(query)) {
+                        item.classList.remove('d-none');
+                    } else {
+                        item.classList.add('d-none');
+                    }
                 }
+                else {
+                    item.classList.remove('d-none');
+                }
+                
             });
         }, debounceDelay);
     });

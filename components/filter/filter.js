@@ -1,4 +1,3 @@
-
 import { uniqueCatagoryArray } from "../card/card.js";
 import { resetCount } from "../loader/loader.js";
 
@@ -48,12 +47,10 @@ const filter = () => {
                     }
                 })
             })
-
             if (activeCatagory.length == 0) {
                 getAllCards.forEach(element => {
                     element.classList.add('active');
                 })
-
             }
             getLoadMoreBtn.click();
         })
@@ -68,7 +65,7 @@ const filter = () => {
     // filter drawer event for mobile view 
     let getFilterTopSection = document.querySelector('.product-listing__filter-content');
     getFilterTopSection.addEventListener('click',function() {
-            window.scrollTo(0, 0);
+           // window.scrollTo(0, 0);
             getBodyElement.classList.add('hide-scroll');
             getFilterSection.classList.add('product-listing-filter--animation');
     })
